@@ -18,4 +18,4 @@ const eqArrays = function(array1 , array2 ) {
 };
 
 eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => true
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])) // => false
+eqArrays(["1", "2", "3"], ["1", "2", 3]); // => false
