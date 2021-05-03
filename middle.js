@@ -10,27 +10,28 @@ middle([1, 2]) // => []
 //For arrays with an even number of elements, an array containing the two elements in the middle should be returned
 
 // TEST/ASSERTION FUNCTIONS
-const eqArrays = function(array1, array2) {
-  //...
-  flag = true;
-  for(let i = 0 ; i < array1.length ; i++){
-    if(array1[i] === array2[i]){
-      flag = true;
-    } else {
-      flag = false;
-    }
-  }
-  return flag;
-}
+// const eqArrays = function(array1, array2) {
+//   //...
+//   flag = true;
+//   for(let i = 0 ; i < array1.length ; i++){
+//     if(array1[i] === array2[i]){
+//       flag = true;
+//     } else {
+//       flag = false;
+//     }
+//   }
+//   return flag;
+// }
 
-const assertArraysEqual = function(actual, expected) {
-  //...
-  if(actual === expected){
-    console.log("PASS");
-  } else {
-    console.log("Fail");
-  }
-}
+// const assertArraysEqual = function(actual, expected) {
+//   //...
+//   if(actual === expected){
+//     console.log("PASS");
+//   } else {
+//     console.log("Fail");
+//   }
+// }
+
 
 const middle = function(array) {
   let middleArray = [];
@@ -51,13 +52,14 @@ const middle = function(array) {
   return middleArray;
 
 }
-//assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4]),[2, 3]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]),[3, 4]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3]),[2]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5]),[3]), true);
-assertArraysEqual(eqArrays(middle([1]),[]), true);
-assertArraysEqual(eqArrays(middle([1, 2]),[]), true);
+module.exports = middle;
+
+// assertArraysEqual(eqArrays(middle([1, 2, 3, 4]),[2, 3]), true);
+// assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]),[3, 4]), true);
+// assertArraysEqual(eqArrays(middle([1, 2, 3]),[2]), true);
+// assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5]),[3]), true);
+// assertArraysEqual(eqArrays(middle([1]),[]), true);
+// assertArraysEqual(eqArrays(middle([1, 2]),[]), true);
 
 
 //arrays with even number of values
