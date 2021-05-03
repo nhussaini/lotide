@@ -12,6 +12,7 @@ Use assertEqual to write test cases for various scenarios.
 The tests can be written below the definition of your function. Here's one example to get you started.
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
  */
+const assertEqual = require('./assertEqual');
 
 const eqArrays = function(array1 , array2 ) {
   flag = true;
@@ -24,16 +25,16 @@ const eqArrays = function(array1 , array2 ) {
   }
   return flag;
 };
+module.exports = eqArrays;
 
-const assertEqual = function(actual, expected) {
-  if(actual === expected){
-    console.log("PASS");
-  } else {
-    console.log("Fail");
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if(actual === expected){
+//     console.log("PASS");
+//   } else {
+//     console.log("Fail");
+//   }
+// };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-
-//console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])) // => true
-//console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])) // => false
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => false
