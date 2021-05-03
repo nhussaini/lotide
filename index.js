@@ -6,10 +6,10 @@ const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  countLetters: countLetters,
-  countOnly: countOnly
+  head,
+  tail,
+  middle,
+  countLetters,
+  countOnly,
 
 };
