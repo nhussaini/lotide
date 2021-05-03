@@ -23,4 +23,15 @@ const obj= {
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }
-console.log(obj);
+//console.log(obj);
+
+const person = {
+  firstName: 'Bob',
+  lastName:  'Smith',
+  fullName: function() {
+    return this.firstName + ' ' + this.lastName;
+  }
+}
+
+// Nice, now I can just say:
+console.log('Hello, ' + person.fullName());
