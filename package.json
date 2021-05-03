@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@nhussaini/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a list of useful functions",
   "main": "main.js",
   "directories": {
     "test": "test"
